@@ -1,0 +1,34 @@
+{
+    "shoes": [
+        {
+            "id": "1", 
+            "size": ["13W", "12","11", "10"], 
+            "brand": "Nike", 
+            "style": "Basketball", 
+            "color": [
+                "Red", "Blue"
+            ], 
+            "price": 100
+        },
+        {
+            "id": "2", 
+            "size": ["13W", "12", "11", "10"], 
+            "brand": "Asics", 
+            "style": "Running", 
+            "color": [
+                "Black", "Gray"
+            ], 
+            "price": 100
+        },
+        {
+            "id": "3", 
+            "size": ["11", "11W", "10"], 
+            "brand": "Sketchers", 
+            "style": "Running", 
+            "color": [
+                "Red", "Blue"
+            ], 
+            "price": 100
+        }
+    ]
+}
