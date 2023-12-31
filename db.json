@@ -8,7 +8,8 @@
             "color": [
                 "Red", "Blue"
             ], 
-            "price": 100
+            "price": 100,
+            "image": "https://sneakernews.com/wp-content/uploads/2022/04/nike-dunk-high-usa-red-blue-white-release-date-6.jpg"
         },
         {
             "id": "2", 
@@ -18,7 +19,8 @@
             "color": [
                 "Black", "Gray"
             ], 
-            "price": 100
+            "price": 100,
+            "image": "https://images.asics.com/is/image/asics/1201A631_002_SR_RT_GLB?$sfcc-product$"
         },
         {
             "id": "3", 
@@ -26,9 +28,10 @@
             "brand": "Sketchers", 
             "style": "Running", 
             "color": [
-                "Red", "Blue"
+                "Back", "Blue"
             ], 
-            "price": 100
+            "price": 100,
+            "image": "https://www.skechers.com/dw/image/v2/BDCN_PRD/on/demandware.static/-/Sites-skechers-master/default/dw27a5ca7d/images/large/232136_BLBK.jpg?sw=800"
         }
     ]
 }

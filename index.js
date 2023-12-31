@@ -11,19 +11,39 @@ document.addEventListener("DOMContentLoaded", () => {
 })
 
 
+function getAllShoes() {
+  return fetch('http://localhost:3000/shoes')
+  .then(r => r.json())
+  // .then(shoes => displayOneShoe(shoes))
+}
+
+
+function displayAllShoes(){
+  /* 1. Get all shoes
+  2. Display All Shoes
+  */ 
+ getAllShoes()
+ .then(shoes => shoes.forEach(shoe => displayOneShoe(shoe)))
+ .catch(error => console.log(error))
+}
+
 displayAllShoes()
 
-const displayAllShoes = () => {
-  /* 1. Get all shoes
-     2. Display All Shoes
-*/ 
-  getAllShoes();
-}
-function getAllShoes() {
-  fetch('https://replit.com/@JamesHawk585/Soul-Shoes#db.json')
-  console.log('getting all shoes!')
-  .then((r) => r.json)
-  .then(console.log(r))
+// 1:39
+
+
+// .then() returns a promise, allowing other js code to run while the functions within the .then() method are run.  
+
+
+function displayOneShoe(shoe) {
+  console.log("I should display", shoe)
+  const shoeCell = document.createElement('li')
+  const image = document.createElement('img')
+  image.src = shoe.image
+  console.log(image)
+  shoeCell.append(image)
+  const shoesGridUl = document.getElementById('shoeGrid')
+  shoesGridUl.append(shoeCell)
+  // shoesGridUl.append(image)
 }
 
-  
