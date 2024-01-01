@@ -1,0 +1,18 @@
+body {
+    display: grid;
+    grid-template-areas: "header header" "adImage shoeGrid";
+    grid-template-columns: 1fr 1fr;
+}
+
+.header {
+    grid-area: header;
+    grid-row: 1 / span-all;
+}
+
+#adImage {
+    grid-area: adImage;
+}
+
+#shoesGridConstainer {
+    grid-area: shoeGrid;
+}
