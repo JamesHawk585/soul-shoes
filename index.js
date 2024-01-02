@@ -20,7 +20,18 @@ document.querySelector("#searchBar").addEventListener("search", (event) => {
 function searchShoes(searchTerm) {
   fetch("http://localhost:3000/shoes")
   .then((r) => r.json())
-  .then(console.log)
+  .then(shoes => {
+    // We have shoes data
+    // Compare it with search term
+    // display matches 
+
+    shoes.forEach(shoe => {
+      if (shoe.brand === searchTerm) {
+        console.log(shoe.brand)
+      }
+    })
+    return
+  })
 }
 
 function getAllShoes() {
