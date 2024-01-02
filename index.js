@@ -12,7 +12,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 document.querySelector("#searchBar").addEventListener("search", (event) => {
-  console.log("User typed...", event.target.value);
   const searchTerm = event.target.value;
   searchShoes(searchTerm)
 })
@@ -24,41 +23,28 @@ function searchShoes(searchTerm) {
     // We have shoes data
     // Compare it with search term
     // display matches 
-
-    shoes.forEach(shoe => {
-      if (shoe.brand === searchTerm) {
-        console.log(shoe.brand)
-      }
-    })
-    return
+  const filteredShoes = shoes.filter(shoe => {
+    if(shoe.brand === searchTerm || shoe.style === searchTerm || shoe.color[0] === searchTerm || shoe.color[1] === searchTerm) {
+    return true;
+    } else {
+    return false;
+    }  
+  });
+  resetShoeGrid()
+  filteredShoes.forEach((shoe) => {
+    displayOneShoe(shoe)
   })
-}
+  });
+} 
 
 function getAllShoes() {
   return fetch('http://localhost:3000/shoes')
   .then(r => r.json())
-  // .then(shoes => displayOneShoe(shoes))
 }
-
-
-function displayAllShoes(){
-  /* 1. Get all shoes
-  2. Display All Shoes
-  */ 
- getAllShoes()
- .then(shoes => shoes.forEach(shoe => displayOneShoe(shoe)))
- .catch(error => console.log(error))
-}
-
-displayAllShoes()
-
-// 1:39
-
-
-// .then() returns a promise, allowing other js code to run while the functions within the .then() method are run.  
 
 
 function displayOneShoe(shoe) {
+  console.log(shoe)
   const shoeCell = document.createElement('li')
   const image = document.createElement('img')
   image.src = shoe.image
@@ -68,3 +54,6 @@ function displayOneShoe(shoe) {
   // shoesGridUl.append(image)
 }
 
+function resetShoeGrid() {
+  document.getElementById('shoeGrid').replaceChildren();
+}
