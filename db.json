@@ -2,12 +2,10 @@
     "shoes": [
         {
             "id": "1", 
-            "size": ["13W", "12","11", "10"], 
+            "size": ["13W", "12", "11", "10"], 
             "brand": "Nike", 
             "style": "Basketball", 
-            "color": [
-                "Red", "Blue"
-            ], 
+            "color": ["Red", "Blue"], 
             "price": 100,
             "image": "https://sneakernews.com/wp-content/uploads/2022/04/nike-dunk-high-usa-red-blue-white-release-date-6.jpg"
         },
@@ -16,9 +14,7 @@
             "size": ["13W", "12", "11", "10"], 
             "brand": "Asics", 
             "style": "Running", 
-            "color": [
-                "Black", "Gray"
-            ], 
+            "color": ["Black", "Gray"], 
             "price": 100,
             "image": "https://images.asics.com/is/image/asics/1201A631_002_SR_RT_GLB?$sfcc-product$"
         },
@@ -27,11 +23,72 @@
             "size": ["11", "11W", "10"], 
             "brand": "Sketchers", 
             "style": "Running", 
-            "color": [
-                "Back", "Blue"
-            ], 
+            "color": ["Black", "Blue"], 
             "price": 100,
             "image": "https://www.skechers.com/dw/image/v2/BDCN_PRD/on/demandware.static/-/Sites-skechers-master/default/dw27a5ca7d/images/large/232136_BLBK.jpg?sw=800"
+        },
+        {
+            "id": "4", 
+            "size": ["12", "10", "9"], 
+            "brand": "Adidas", 
+            "style": "Sneakers", 
+            "color": ["White", "Green"], 
+            "price": 80,
+            "image": "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcQC6l9YKG9urzxDUjCy69QhH2H4jcg81w45bFJf0PZUmP7hhX4KbMNEV8xcrQejvyifZ_pd2bXh5q_uIaPUbgYQNpxM3GD6imJTF1ZhPy4P8fDTKShTpDspe1i5NhTipGIdO4dSMPs&usqp=CAc"
+        },
+        {
+            "id": "5", 
+            "size": ["10", "9", "8"], 
+            "brand": "Puma", 
+            "style": "Casual", 
+            "color": ["Black", "Yellow"], 
+            "price": 90,
+            "image": "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcQwAOc9esNcRzbnILpQIy6LAoQUgsgE8dM_wHlkp25YENk12PMW39xuGLu0FVa2JRmOcypAbE5ILlRvBz4cQf0JY-V1oAqOiZc15kOGatb1YsTok5thTou9-TFJADrkH4WbuYZBTQ&usqp=CAc"
+        },
+        {
+            "id": "6", 
+            "size": ["11", "10", "9"], 
+            "brand": "New Balance", 
+            "style": "Walking", 
+            "color": ["Gray", "Purple"], 
+            "price": 85,
+            "image": "https://sneakernews.com/wp-content/uploads/2023/01/new-balance-550-womens-grey-purple-bbw550fa-4.jpg"
+        },
+        {
+            "id": "7", 
+            "size": ["12", "11", "10"], 
+            "brand": "Reebok", 
+            "style": "Crossfit", 
+            "color": ["Blue", "Orange"], 
+            "price": 110,
+            "image": "https://i.ebayimg.com/images/g/k7EAAOSwjY5hAcct/s-l1600.png"
+        },
+        {
+            "id": "8", 
+            "size": ["9", "8", "7"], 
+            "brand": "Under Armour", 
+            "style": "Training", 
+            "color": ["Black", "Red"], 
+            "price": 95,
+            "image": "https://m.media-amazon.com/images/I/71i6iTrGkWL._AC_SX575_.jpg"
+        },
+        {
+            "id": "9", 
+            "size": ["13", "12", "11"], 
+            "brand": "Vans", 
+            "style": "Skateboarding", 
+            "color": ["White", "Brown"], 
+            "price": 75,
+            "image": "https://images.vans.com/is/image/Vans/VN0A5KRF_8EE_HERO?hei=1024&wid=1024&qlt=95"
+        },
+        {
+            "id": "10", 
+            "size": ["8", "7", "6"], 
+            "brand": "Converse", 
+            "style": "Classic", 
+            "color": ["Black", "White"], 
+            "price": 60,
+            "image": "https://www.converse.com/dw/image/v2/BCZC_PRD/on/demandware.static/-/Sites-cnv-master-catalog/default/dw3931bb17/images/a_107/M9160_A_107X1.jpg?sw=964"
         }
     ]
 }
